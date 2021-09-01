@@ -18,23 +18,21 @@ const styles = {
   },
 };
 
-export default function Login() {
+const Signup = () => {
   return (
     <div style={styles.div}>
-      <h2 style={styles.h2}>Log in.</h2>
+      <h2 style={styles.h2}>Sign up.</h2>
       <form style={styles.form}>
         <label for="username">Username:</label>
+        <input type="text"></input>
+        <label for="email">Email:</label>
         <input type="text"></input>
         <label for="password">Password:</label>
         <input type="text"></input>
         <input type="submit" value="Submit"></input>
-        <p>
-          Don't have an account? Sign up
-          <Link to="/signup">
-            <span>Here</span>
-          </Link>
-        </p>
       </form>
     </div>
   );
-}
+};
+
+export default Signup;
